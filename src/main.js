@@ -5,8 +5,11 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+require("@/assets/css/normalize.css");
+require("@/assets/css/style.css");
+
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount('#app')
